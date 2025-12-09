@@ -141,15 +141,14 @@ Sketch uses 56160 bytes (10%) of program storage space. Maximum is 524288 bytes.
 This repo has an example that demonstrates LoRaWAN temperature sensing with System ON sleep mode using RTC2 for timing.
 
 
+## Note
+
+### ABI Compatibility
 ```cpp
   // Safe integer printing to avoid ABI mismatch issues
   int tempInt = (int)temp;
   int tempDec = abs((int)(temp * 100) % 100);
 ```
-
-## Note
-
-### ABI Compatibility
 Safe ABI handling is critical. Without proper integer handling, software and hardware FPU mismatches will occur, preventing compilation. This is due to the legacy board library (the only one supporting ST-Link). While it's theoretically possible to modify assembly-level settings, this would cause conflicts such as stuck states from overly precise temperature readings.
 
 
