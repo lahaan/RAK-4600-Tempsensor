@@ -81,7 +81,7 @@ After making all modifications, restart the Arduino IDE.
 Use the following configuration:
 
 - **Board:** Generic nRF52
-- **Crystal Oscillator:** (select appropriate option)
+- **Crystal Oscillator**
 - **Softdevice:** None
 - **Programmer:** ST-Link V2
 
