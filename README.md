@@ -138,9 +138,8 @@ Sketch uses 56160 bytes (10%) of program storage space. Maximum is 524288 bytes.
 
 ## Example Code with Low-Power Sleep
 
-This example demonstrates LoRaWAN temperature sensing with System ON sleep mode using RTC2 for timing.
+This repo has an example that demonstrates LoRaWAN temperature sensing with System ON sleep mode using RTC2 for timing.
 
-### Complete Implementation
 
 ```cpp
   // Safe integer printing to avoid ABI mismatch issues
